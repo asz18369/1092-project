@@ -47,7 +47,8 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 7rem;
+  color: #2528b3;
 }
 
 .title,
@@ -56,8 +57,8 @@
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 2;
+  font-size: 3rem;
 }
 
 .code {
@@ -119,3 +120,4 @@
     flex-direction: column;
   }
 }
+

@@ -1,87 +1,61 @@
 import Head from "next/head";
-import styles from '../styles/Nav.module.css'
-import Nav from '../pages/index'
+import styles from '../styles/Layout2.module.css'
 
-export default function Nav2() {
-    return (
-        <div>
-            <nav>
-  <ul className="container">
-    <li><a href="#">Home</a></li>
-    <li className="dropdown">
-      <a href="#">Pages <i className="fa fa-angle-down" /></a>
-      <div className="mega-menu">
-        <div className="container">
-          <div className="item">
-            <h3>Home Page</h3>
-            <ul>
-              <li><a href="#">Home Page No #1</a></li>
-              <li><a href="#">Home Page No #2</a></li>
-              <li><a href="#">Home Page No #3</a></li>
-              <li><a href="#">Home Page No #4</a></li>
-            </ul>
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Contact</h3>
-            <ul>
-              <li><a href="#">Contact Page No #1</a></li>
-              <li><a href="#">Contact Page No #2</a></li>
-              <li><a href="#">Contact Page No #3</a></li>
-              <li><a href="#">Contact Page No #4</a></li>
-              <li><a href="#">Contact Page No #5</a></li>
-            </ul>
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Portfolio</h3>
-            <ul>
-              <li><a href="#">Portfolio Page No #1</a></li>
-              <li><a href="#">Portfolio Page No #2</a></li>
-              <li><a href="#">Portfolio Page No #3</a></li>
-            </ul>
-          </div> {/* /.item */} 
-          <div className="item">
-            <h3>Custom</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-        </div>{/* /.container */}
-      </div>{/* /.mega-menu */}
-    </li>{/* /.dropdown */}
-    <li className="dropdown">
-      <a href="#">Images <i className="fa fa-angle-down" /> </a>
-      <div className="mega-menu">
-        <div className="container">
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-          <div className="item">
-            <h3>Image One</h3>
-            <img src="http://placehold.it/250x200" />
-          </div> {/* /.item */}
-        </div>{/* .container */}
-      </div>{/* .mega-menu*/}
-    </li>{/* .dropdown */}
-    <li><a href="#">About</a></li>
-    <li><a href="#">Conatct</a></li>
-  </ul>{/* .container */}
-</nav>
 
-        </div>
-    )
+export default function Layout2() {
+  return (
+      <div>
+          <nav className={styles.nav}>
+  <div className={styles.container}>
+      <input className={styles.input} id="responsive-menu" type="checkbox" />
+      <label className={styles.label} for="responsive-menu">Menu <span className={styles["menu-icon"]}></span></label>
+      <div className={styles.overlay}></div>
+      <ul className={styles.ul}>
+          <li className={styles.li}><a className={styles.a} href="http://art.yale.edu/">Yale University School of Art</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.suzannecollinsbooks.com/">Suzanne Collins</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.arrestling.com/index.htm">Gulla’s Arrestling</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.roverp6cars.com/">MGBD Parts &amp; Services</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.irishwrecksonline.net/">Irish Shipwrecks Online</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.arngren.net/">Arngren</a></li>
+          <li className={styles.li}><a className={styles.a} href="https://www.lingscars.com/">Ling's Cars</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.007museum.com/">JAMES BOND 007 MUSEUM</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://www.dokimos.org/ajff/">ACCEPT JESUS, FOREVER FORGIVEN!</a></li>
+          <li className={styles.li}><a className={styles.a} href="http://ronoslund.com/">Ron Oslund's Home Page</a></li>
+      </ul>
+      <ul className={styles.ul} className={styles["social-media"]}>
+          <li className={styles.li}>
+              <a className={styles.a} href="https://dribbble.com/erinesullivan">
+                  <i className="fab fa-dribbble"></i>
+                  <span className={styles["screen-reader-text"]}>Dribbble</span>
+              </a>
+          </li>
+          <li className={styles.li}>
+              <a className={styles.a} href="http://codepen.io/erinesullivan/">
+                  <i className="fab fa-codepen"></i>
+                  <span className={styles["screen-reader-text"]}>CodePen</span>
+              </a>
+          </li>
+          <li className={styles.li}>
+              <a className={styles.a} href="https://twitter.com/erin_e_sullivan">
+                  <i className="fab fa-twitter"></i>
+                  <span className={styles["screen-reader-text"]}>Twitter</span>
+              </a>
+          </li>
+          <li className={styles.li}>
+              <a className={styles.a} href="https://www.linkedin.com/in/erinesullivan1">
+                  <i className="fab fa-linkedin"></i>
+                  <span className={styles["screen-reader-text"]}>LinkedIn</span>
+              </a>
+          </li>
+          <li className={styles.li}>
+              <a className={styles.a} href="https://www.instagram.com/erin_e_sullivan/">
+                  <i className="fab fa-instagram"></i>
+                  <span className={styles["screen-reader-text"]}>Instagram</span>
+              </a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+  </div>
+  )
 }

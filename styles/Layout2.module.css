@@ -1,35 +1,18 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: #1d1f20;
-    color: #e5e5e5;
-    font: 16px/1.25 'Raleway', sans-serif;
-}
-
-h1 {
+.h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
-a {
-    color: #a2ed56;
+.a {
+    color: #9aa88d;
 }
 
-a:hover {
+.a:hover {
     color: #83e4e2;
     text-decoration: none;
 }
@@ -37,13 +20,10 @@ a:hover {
 .container {
     margin: 0 auto;
     max-width: 80em;
+	padding: 1em;
 }
 
-main .container {
-    padding: 1em;
-}
-
-p {
+.p {
     margin-left: auto;
     margin-right: auto;
     max-width: 40em;
@@ -63,7 +43,7 @@ p {
 /************************************************/
 /****************** NAVIGATION ******************/
 /************************************************/
-nav {
+.nav {
     background: #e5e5e5;
     color: #1d1f20;
     left: 0;
@@ -74,14 +54,14 @@ nav {
 }
 
 /*** INPUT ***/
-nav input {
+.nav input {
     opacity: 0;
     position: absolute;
     z-index: -1;
 }
 
 /*** LABEL ***/
-nav label {
+.nav label {
     cursor: pointer;
     display: block;
     font: 2em/1 'Oswald', sans-serif;
@@ -89,9 +69,9 @@ nav label {
 }
 
 /* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
     background: #1d1f20;
     border-radius: 0.05em;
     height: 0.2em;
@@ -99,43 +79,43 @@ nav label {
     width: 100%;
 }
 
-#menu-icon {
+.menu-icon {
     display: inline-block;
     margin: 0.4em 0;
     max-width: 1em;
     position: relative;
 }
 
-nav label #menu-icon {
+.nav .label .menu-icon {
     float: right;
 }
 
-#menu-icon:before,
-#menu-icon:after {
+.menu-icon:before,
+.menu-icon:after {
     content: '';
     left: 0;
     position: absolute;
 }
 
-#menu-icon:before {
+.menu-icon:before {
     top: -0.4em;
 }
 
-#menu-icon:after {
+.menu-icon:after {
     bottom: -0.4em;
 }
 
 /* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
+.nav .input[type=checkbox]:checked + label .menu-icon {
     background: transparent;
 }
 
-nav input[type=checkbox]:checked + label #menu-icon:before {
+.nav .input[type=checkbox]:checked + label .menu-icon:before {
     top: 0;
     transform: rotate(-45deg);
 }
 
-nav input[type=checkbox]:checked + label #menu-icon:after {
+.nav .input[type=checkbox]:checked + label .menu-icon:after {
     bottom: 0;
     transform: rotate(45deg);
 }
@@ -143,7 +123,7 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
 
 /*** MENU ***/
 /* Overlay */
-nav input:checked ~ #overlay {
+.nav input:checked ~ .overlay {
     background: #e5e5e5;
     bottom: 0;
     left: 0;
@@ -156,7 +136,7 @@ nav input:checked ~ #overlay {
 }
 
 /* List */
-nav ul {
+.nav ul {
     font-size: 1.5em;
     list-style: none;
     margin: 0;
@@ -167,27 +147,27 @@ nav ul {
     text-align: center;
 }
 
-nav input:checked ~ ul {
+.nav input:checked ~ ul {
     margin: 1em;
     max-height: inherit;
     opacity: 1;
 }
 
-nav ul > li {
+.li {
     margin: 0.5em 0;
 }
 
-nav ul a {
+.nav ul a {
     color: #1d1f20!important;
     text-decoration: none;
 }
 
-nav ul a:hover {
+.nav ul .a:hover {
     text-decoration: underline;
 }
 
 /* Social Media */
-nav ul#social-media > li {
+.nav ul.social-media > li {
     display: inline-block;
     font-size: 1.5em;
     margin: 0.5em;

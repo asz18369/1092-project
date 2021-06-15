@@ -48,7 +48,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 7rem;
-  color: #2528b3;
+  color: #292cd4;
 }
 
 .title,
@@ -59,6 +59,7 @@
 .description {
   line-height: 2;
   font-size: 3rem;
+  color: rgb(121, 22, 52);
 }
 
 .code {
@@ -95,7 +96,7 @@
 .card:focus,
 .card:active {
   color: #0070f3;
-  border-color: #0070f3;
+  border-color: #167aec;
 }
 
 .card h2 {

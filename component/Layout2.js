@@ -1,60 +1,86 @@
 import Head from "next/head";
-import styles from '../styles/Layout.module.css'
-import Layout from '../pages/index'
+import styles from '../styles/Nav.module.css'
+import Nav from '../pages/index'
 
-export default function Layout2() {
+export default function Nav2() {
     return (
         <div>
-            <>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, intial-scale=1" />
-  <title>Custom Coding</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
-  <style dangerouslySetInnerHTML={{__html: "<% include ./styles.css %>\n         \n     " }} />
-  <header>
-    <h2 href="#"> Mountain Travel</h2>
-    <nav className={styles.nav}>
-      <li><a className={styles.a} href="#">Main</a> </li> 
-      <li><a className={styles.a} href="#">404</a> </li>
-      <li><a className={styles.a} href="#">Contact</a> </li>
-    </nav>
-  </header>
-  <section className="hero">
-    <div className="background-image" style={{backgroundImage: 'url(https://wallpaper-house.com/data/out/7/wallpaper2you_139824.jpg)'}} />
-    <div className="hero-content-area">
-      <h1>Mountain Travel</h1>
-      <h3> Unmissable Adventure Tours Around the World</h3>
-      <a className={styles.a} href="#" className="btn">Contact Us</a>
-    </div>
-  </section>
-  <section className="destinations">
-    <h3 className="title">Rest information will go here:</h3>
-    <p>blah blash blahs blahs blahss</p>
-    <hr />
-  </section>
-  <section className="contact">
-    <h3 className="title">Join our newsletter</h3>	
-    <p>Information will go here(if any)</p>
-    <hr />
-    <form>
-      <input type="email" placeholder="Email" />
-      <a className={styles.a} href="#" className="btn">Subscribe now</a>
-    </form>
-  </section>
-  <footer>
-    <ul className={styles.ul}>
-      <li><a className={styles.a} href="#"><i className="fa fa-twitter-square" /></a></li>
-      <li><a className={styles.a} href="#"><i className="fa fa-facebook-square" /></a></li>
-      <li><a className={styles.a} href="#"><i className="fa fa-snapchat-square" /></a></li>
-      <li><a className={styles.a} href="#"><i className="fa fa-pinterest-square" /></a></li>
-      <li><a className={styles.a} href="#"><i className="fa fa-github-square" /></a></li>
-    </ul>
-    <p>Made by Pardeep Singh</p>
-    <p>No attribution required. you can remove this footer.</p>
-  </footer>
-</>
+            <nav>
+  <ul className="container">
+    <li><a href="#">Home</a></li>
+    <li className="dropdown">
+      <a href="#">Pages <i className="fa fa-angle-down" /></a>
+      <div className="mega-menu">
+        <div className="container">
+          <div className="item">
+            <h3>Home Page</h3>
+            <ul>
+              <li><a href="#">Home Page No #1</a></li>
+              <li><a href="#">Home Page No #2</a></li>
+              <li><a href="#">Home Page No #3</a></li>
+              <li><a href="#">Home Page No #4</a></li>
+            </ul>
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Contact Page No #1</a></li>
+              <li><a href="#">Contact Page No #2</a></li>
+              <li><a href="#">Contact Page No #3</a></li>
+              <li><a href="#">Contact Page No #4</a></li>
+              <li><a href="#">Contact Page No #5</a></li>
+            </ul>
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Portfolio</h3>
+            <ul>
+              <li><a href="#">Portfolio Page No #1</a></li>
+              <li><a href="#">Portfolio Page No #2</a></li>
+              <li><a href="#">Portfolio Page No #3</a></li>
+            </ul>
+          </div> {/* /.item */} 
+          <div className="item">
+            <h3>Custom</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+        </div>{/* /.container */}
+      </div>{/* /.mega-menu */}
+    </li>{/* /.dropdown */}
+    <li className="dropdown">
+      <a href="#">Images <i className="fa fa-angle-down" /> </a>
+      <div className="mega-menu">
+        <div className="container">
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+          <div className="item">
+            <h3>Image One</h3>
+            <img src="http://placehold.it/250x200" />
+          </div> {/* /.item */}
+        </div>{/* .container */}
+      </div>{/* .mega-menu*/}
+    </li>{/* .dropdown */}
+    <li><a href="#">About</a></li>
+    <li><a href="#">Conatct</a></li>
+  </ul>{/* .container */}
+</nav>
 
         </div>
     )

@@ -1,4 +1,4 @@
-import Head from "next/head";
+
 import styles from '../styles/Layout2.module.css'
 
 
@@ -49,15 +49,17 @@ export default function Layout2() {
           </li>
       </ul>
   </div>
+  
+  
 
+  </nav>
   <main className={styles.main}>
     <div className={styles.container}>
         <h1 className={styles.h1}>Welcome to my project</h1>
         <p className={styles.p}>Hi! I'm 陳至賢.And this is my final project,hope you like it and enjoy it.</p>
+        <p>甘苦談:</p>
     </div>
-</main>
-
-  </nav>
+    </main>
   </div>
   )
 }

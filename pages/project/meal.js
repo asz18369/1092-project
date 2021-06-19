@@ -1,10 +1,12 @@
 import style from "../../styles/mealdb.module.css";
 import Head from "next/head";
 import mealData from "./../../meal-data";
+import Footer2 from '../../component/Footer2'
 
 export default function mealdb() {
   return (
     <div>
+      <Footer2>
       <Head>
         <link
           rel="stylesheet"
@@ -12,6 +14,7 @@ export default function mealdb() {
         />
         <title>MealDB</title>
       </Head>
+      </Footer2>
       <div className={style.container}>
         <h1 className={style.title__main}>Meal Finder</h1>
         <div className={style["flex-box"]}>
@@ -40,6 +43,7 @@ export default function mealdb() {
         ))}
       </div>
     </div>
+    
   );
 }
 
@@ -51,5 +55,6 @@ function Meal({ id, image, name }) {
         <h2>{name}</h2>
       </div>
     </div>
+    
   );
 }

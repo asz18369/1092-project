@@ -1,5 +1,6 @@
 import styles from '../../styles/mealdb.module.css';
 import Head from 'next/head'
+import Footer2 from '../../component/Footer2'
 //import mealData from './meal-data'
 import {useState} from 'react'
 
@@ -27,10 +28,12 @@ export default function meals() {
 
     return (
     <div>
+        <Footer2>
         <Head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <title>MealDb</title>
         </Head>
+        </Footer2>
         <div className={styles.container}>
         <h1 className={styles.title__main}>Meal Finder</h1>
         <div className={styles["flex-box"]}>
